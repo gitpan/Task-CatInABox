@@ -5,7 +5,7 @@ author:
 build_requires:
   Test::More: 0.42
 distribution_type: module
-generated_by: 'Module::Install version 0.77'
+generated_by: 'Module::Install version 0.770'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,15 +15,14 @@ name: Task-CatInABox
 no_index:
   directory:
     - inc
-    - t
 requires:
   Catalyst::Authentication::Credential::HTTP: 0
   Catalyst::Authentication::Credential::Password: 0
   Catalyst::Authentication::Store::DBIx::Class: 0
   Catalyst::Authentication::Store::Htpasswd: 0
   Catalyst::Devel: 0
-  Catalyst::Model::DBIC::File: 0
   Catalyst::Model::DBIC::Schema: 0
+  Catalyst::Model::File: 0
   Catalyst::Plugin::Authentication: 0
   Catalyst::View::JSON: 0
   Catalyst::View::TT: 0
@@ -36,4 +35,4 @@ requires:
   perl: 5.8.0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02
