@@ -3,9 +3,12 @@ abstract: 'Catalyst and related modules for exploring Catalyst'
 author:
   - 'Adam Kennedy <adamk@cpan.org>'
 build_requires:
+  ExtUtils::MakeMaker: 6.42
   Test::More: 0.42
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 0.770'
+generated_by: 'Module::Install version 0.85'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,6 +18,7 @@ name: Task-CatInABox
 no_index:
   directory:
     - inc
+    - t
 requires:
   Catalyst::Authentication::Credential::HTTP: 0
   Catalyst::Authentication::Credential::Password: 0
@@ -34,5 +38,7 @@ requires:
   Template: 0
   perl: 5.8.0
 resources:
+  ChangeLog: http://fisheye2.atlassian.com/changelog/cpan/trunk/Task-CatInABox
   license: http://dev.perl.org/licenses/
-version: 0.02
+  repository: http://svn.ali.as/cpan/trunk/Task-CatInABox
+version: 0.03
